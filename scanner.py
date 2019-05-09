@@ -6,8 +6,8 @@ import nmap
 
 def menu():
     st = ("\nFunctions:\n"  
-          "(0) : TCP Port Scanner\n"
-          "(1) : UDP Port Scanner\n"
+          "(0) : Host TCP Port Scanner\n"
+          "(1) : Host UDP Port Scanner\n"
           "(2) : Network Scanner\n"    
           "(3) : Network Port Scanner\n"    
           "(4) : Exit \n"
@@ -55,6 +55,7 @@ def tcp_scanner(target, ports):
     print("PORT    STATE    SERVICE")
    
     nm.scan(target)
+    
     for port in ports:
         try:
             lport = nm[target]['tcp'][port]
