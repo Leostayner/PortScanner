@@ -6,8 +6,8 @@ def menu():
     st = ("\nFunctions:\n"  
           "(0) : Host TCP Port Scanner\n"
           "(1) : Host UDP Port Scanner\n"
-          "(2) : Network Scanner\n"    
-          "(3) : Network Port Scanner\n"    
+          "(2) : Network - List Hosts \n"    
+          "(3) : Network - Hosts Port Scanner\n"    
           "(4) : Exit \n"
           "\nSelect a Function: ")    
     try:
